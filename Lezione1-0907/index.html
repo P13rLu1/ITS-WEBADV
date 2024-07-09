@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function calcoloCodiceFiscale() {
+            let strNome = document.getElementById("nome").value;
+            let strCognome = document.getElementById("cognome").value;
+            let strDataNascita = document.getElementById("dataNascita").value;
+            let strSesso = document.getElementById("sesso").value;
+            let strComuneNascita = document.getElementById("comuneNascita").value;
+            alert("Ciao " + strNome + " " + strCognome + " " + strDataNascita + " " + strSesso + " " + strComuneNascita);
+        }
+    </script>
+</head>
+<body>
+<div>
+    <label for="nome">Nome:</label><input type="text" id="nome">
+    <br/><label for="cognome">Cognome:</label><input type="text" id="cognome">
+    <br/><label for="dataNascita">Data di Nascita (dd/mm/yyy):</label><input type="text" id="dataNascita">
+    <br/><label for="sesso">Sesso (M/F):</label><input type="text" id="sesso">
+    <br/><label for="comuneNascita">Comune catastale di nascita:</label><input type="text" id="comuneNascita">
+
+    <br/>
+    <input type="button" onclick="calcoloCodiceFiscale()" value="CALCOLA CODICE FISCALE">
+</div>
+</body>
+</html>
