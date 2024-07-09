@@ -19,50 +19,54 @@
             let cfMese = arrDataNascita[1];
             let cfAnno = arrDataNascita[2].substring(2, 4);
 
-            let cfMeseElaborato = "";
-
-            switch (cfMese) {
-                case "01":
-                    cfMeseElaborato = "A";
-                    break;
-                case "02":
-                    cfMeseElaborato = "B";
-                    break;
-                case "03":
-                    cfMeseElaborato = "C";
-                    break;
-                case "04":
-                    cfMeseElaborato = "D";
-                    break;
-                case "05":
-                    cfMeseElaborato = "E";
-                    break;
-                case "06":
-                    cfMeseElaborato = "H";
-                    break;
-                case "07":
-                    cfMeseElaborato = "L";
-                    break;
-                case "08":
-                    cfMeseElaborato = "M";
-                    break;
-                case "09":
-                    cfMeseElaborato = "P";
-                    break;
-                case "10":
-                    cfMeseElaborato = "R";
-                    break;
-                case "11":
-                    cfMeseElaborato = "S";
-                    break;
-                case "12":
-                    cfMeseElaborato = "T";
-                    break;
-            }
+            let cfMeseElaborato = calcoloCfMese(cfMese);
 
             let codiceFinale = cfCognome + cfNome + cfAnno + cfMeseElaborato + cfGiorno + strSesso + strComuneNascita;
 
             alert("Ciao " + strNome + " Il Codice Fiscale è Il Seguente: " + codiceFinale);
+        }
+
+        function calcoloCfMese(mese) {
+            let cfMese = "";
+            switch (mese) {
+                case "01":
+                    cfMese = "A";
+                    break;
+                case "02":
+                    cfMese = "B";
+                    break;
+                case "03":
+                    cfMese = "C";
+                    break;
+                case "04":
+                    cfMese = "D";
+                    break;
+                case "05":
+                    cfMese = "E";
+                    break;
+                case "06":
+                    cfMese = "H";
+                    break;
+                case "07":
+                    cfMese = "L";
+                    break;
+                case "08":
+                    cfMese = "M";
+                    break;
+                case "09":
+                    cfMese = "P";
+                    break;
+                case "10":
+                    cfMese = "R";
+                    break;
+                case "11":
+                    cfMese = "S";
+                    break;
+                case "12":
+                    cfMese = "T";
+                    break;
+            }
+            return cfMese;
         }
     </script>
 </head>
