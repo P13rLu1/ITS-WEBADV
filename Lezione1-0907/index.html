@@ -20,10 +20,22 @@
             let cfAnno = arrDataNascita[2].substring(2, 4);
 
             let cfMeseElaborato = calcoloCfMese(cfMese);
+            let cfGiornoElaborato = calcoloGiornoCf(cfGiorno, strSesso);
 
-            let codiceFinale = cfCognome + cfNome + cfAnno + cfMeseElaborato + cfGiorno + strSesso + strComuneNascita;
+            let codiceFinale = cfCognome + cfNome + cfAnno + cfMeseElaborato + cfGiornoElaborato + strSesso + strComuneNascita;
 
             alert("Ciao " + strNome + " Il Codice Fiscale è Il Seguente: " + codiceFinale);
+        }
+
+        function calcoloGiornoCf(giorno, sesso) {
+            let cfGiorno;
+            if (sesso.toUpperCase() === "M") {
+                cfGiorno = giorno;
+            } else {
+                cfGiorno = parseInt(giorno) + 40;
+            }
+
+            return cfGiorno;
         }
 
         function calcoloCfMese(mese) {
