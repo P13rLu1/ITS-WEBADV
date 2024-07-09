@@ -10,20 +10,74 @@
             let strDataNascita = document.getElementById("dataNascita").value;
             let strSesso = document.getElementById("sesso").value;
             let strComuneNascita = document.getElementById("comuneNascita").value;
-            alert("Ciao " + strNome + " " + strCognome + " " + strDataNascita + " " + strSesso + " " + strComuneNascita);
+
+            let cfCognome = strCognome.substring(0, 3).toUpperCase();
+            let cfNome = strNome.substring(0, 3).toUpperCase();
+
+            let arrDataNascita = strDataNascita.split("/");
+            let cfGiorno = arrDataNascita[0];
+            let cfMese = arrDataNascita[1];
+            let cfAnno = arrDataNascita[2].substring(2, 4);
+
+            let cfMeseElaborato = "";
+
+            switch (cfMese) {
+                case "01":
+                    cfMeseElaborato = "A";
+                    break;
+                case "02":
+                    cfMeseElaborato = "B";
+                    break;
+                case "03":
+                    cfMeseElaborato = "C";
+                    break;
+                case "04":
+                    cfMeseElaborato = "D";
+                    break;
+                case "05":
+                    cfMeseElaborato = "E";
+                    break;
+                case "06":
+                    cfMeseElaborato = "H";
+                    break;
+                case "07":
+                    cfMeseElaborato = "L";
+                    break;
+                case "08":
+                    cfMeseElaborato = "M";
+                    break;
+                case "09":
+                    cfMeseElaborato = "P";
+                    break;
+                case "10":
+                    cfMeseElaborato = "R";
+                    break;
+                case "11":
+                    cfMeseElaborato = "S";
+                    break;
+                case "12":
+                    cfMeseElaborato = "T";
+                    break;
+            }
+
+            let codiceFinale = cfCognome + cfNome + cfAnno + cfMeseElaborato + cfGiorno + strSesso + strComuneNascita;
+
+            alert("Ciao " + strNome + " Il Codice Fiscale è Il Seguente: " + codiceFinale);
         }
     </script>
 </head>
 <body>
-<div>
-    <label for="nome">Nome:</label><input type="text" id="nome">
-    <br/><label for="cognome">Cognome:</label><input type="text" id="cognome">
-    <br/><label for="dataNascita">Data di Nascita (dd/mm/yyy):</label><input type="text" id="dataNascita">
-    <br/><label for="sesso">Sesso (M/F):</label><input type="text" id="sesso">
-    <br/><label for="comuneNascita">Comune catastale di nascita:</label><input type="text" id="comuneNascita">
+<div style="text-align: center;">
+    <div>
+        <label for="nome">Nome:</label><input type="text" id="nome">
+        <br/><label for="cognome">Cognome:</label><input type="text" id="cognome">
+        <br/><label for="dataNascita">Data di Nascita (dd/mm/yyy):</label><input type="text" id="dataNascita">
+        <br/><label for="sesso">Sesso (M/F):</label><input type="text" id="sesso">
+        <br/><label for="comuneNascita">Comune catastale di nascita:</label><input type="text" id="comuneNascita">
 
-    <br/>
-    <input type="button" onclick="calcoloCodiceFiscale()" value="CALCOLA CODICE FISCALE">
+        <br/>
+        <input type="button" onclick="calcoloCodiceFiscale()" value="CALCOLA CODICE FISCALE">
+    </div>
 </div>
 </body>
 </html>
