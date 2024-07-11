@@ -1,0 +1,75 @@
+/* style.css for Lezione1-0907 project */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #334;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+div {
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 22px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #130c0c;
+    padding: 5px;
+    margin-right: 15px;
+    text-shadow: 1px 1px 1px #aaa;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+label:hover {
+    color: #b30000;
+    text-shadow: 2px 2px 2px #666;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #007bff; /* Slightly thicker border with a different color */
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: calc(100% - 24px); /* Adjust width to account for the thicker border */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for border color and shadow */
+}
+
+input[type="text"] {
+    background-color: #f0f0f0; /* Lighter background for text inputs */
+}
+
+input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold; /* Make button text slightly bolder */
+}
+
+input:hover {
+    border-color: #0056b3; /* Darker border on hover */
+}
+
+input:focus {
+    border-color: #004099; /* Even darker border for focus */
+    box-shadow: 0 0 8px rgba(0, 64, 153, 0.5); /* Subtle shadow to highlight focus */
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3; /* Slightly darker button background on hover */
+}
+
+/* Adjusts the layout slightly for smaller screens */
+@media (max-width: 600px) {
+    div {
+        width: 95%;
+    }
+}

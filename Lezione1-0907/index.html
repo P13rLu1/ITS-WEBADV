@@ -3,97 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-        function calcoloCodiceFiscale() {
-            let strNome = document.getElementById("nome").value;
-            let strCognome = document.getElementById("cognome").value;
-            let strDataNascita = document.getElementById("dataNascita").value;
-            let strSesso = document.getElementById("sesso").value;
-            let strComuneNascita = document.getElementById("comuneNascita").value;
-
-            let cfCognome = strCognome.substring(0, 3).toUpperCase();
-            let cfNome = strNome.substring(0, 3).toUpperCase();
-
-            let arrDataNascita = strDataNascita.split("/");
-            let cfGiorno = arrDataNascita[0];
-            let cfMese = arrDataNascita[1];
-            let cfAnno = arrDataNascita[2].substring(2, 4);
-
-            let cfMeseElaborato = calcoloCfMese(cfMese);
-            let cfGiornoElaborato = calcoloGiornoCf(cfGiorno, strSesso);
-
-            let codiceFinale = cfCognome + cfNome + cfAnno + cfMeseElaborato + cfGiornoElaborato + strSesso + strComuneNascita;
-
-            alert("Ciao " + strNome + " Il Codice Fiscale è Il Seguente: " + codiceFinale);
-        }
-
-        function calcoloGiornoCf(giorno, sesso) {
-            let cfGiorno;
-            if (sesso.toUpperCase() === "M") {
-                cfGiorno = giorno;
-            } else {
-                cfGiorno = parseInt(giorno) + 40;
-            }
-
-            return cfGiorno;
-        }
-
-        function calcoloCfMese(mese) {
-            let cfMese = "";
-            switch (mese) {
-                case "01":
-                    cfMese = "A";
-                    break;
-                case "02":
-                    cfMese = "B";
-                    break;
-                case "03":
-                    cfMese = "C";
-                    break;
-                case "04":
-                    cfMese = "D";
-                    break;
-                case "05":
-                    cfMese = "E";
-                    break;
-                case "06":
-                    cfMese = "H";
-                    break;
-                case "07":
-                    cfMese = "L";
-                    break;
-                case "08":
-                    cfMese = "M";
-                    break;
-                case "09":
-                    cfMese = "P";
-                    break;
-                case "10":
-                    cfMese = "R";
-                    break;
-                case "11":
-                    cfMese = "S";
-                    break;
-                case "12":
-                    cfMese = "T";
-                    break;
-            }
-            return cfMese;
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div style="text-align: center;">
+<div>
     <div>
         <label for="nome">Nome:</label><input type="text" id="nome">
         <br/><label for="cognome">Cognome:</label><input type="text" id="cognome">
         <br/><label for="dataNascita">Data di Nascita (dd/mm/yyy):</label><input type="text" id="dataNascita">
         <br/><label for="sesso">Sesso (M/F):</label><input type="text" id="sesso">
-        <br/><label for="comuneNascita">Comune catastale di nascita:</label><input type="text" id="comuneNascita">
+        <br/><label for="comuneNascita">Comune di nascita:</label><input type="text" id="comuneNascita">
 
         <br/>
         <input type="button" onclick="calcoloCodiceFiscale()" value="CALCOLA CODICE FISCALE">
     </div>
 </div>
 </body>
+<script src="script.js"></script>
 </html>

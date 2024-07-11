@@ -1,0 +1,63 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Header styling */
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styling for the game's result containers */
+#risultatoA, #risultatoB, #risultato {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Adjustments for the result containers to fill half the page and center */
+#risultatoA, #risultatoB, #risultato {
+    width: 50%;
+    max-width: 600px; /* Adjust based on your preference */
+    margin: 20px auto; /* Centers the div and adds vertical spacing */
+}
+
+
+/* Button styling, complementing Bootstrap's styles */
+button.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+button.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #risultatoA, #risultatoB {
+        width: 70%;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
