@@ -46,9 +46,7 @@ body {
 }
 
 #divContact > img {
-    width: 30px;
-    margin: 0 auto;
-    display: block;
+    display: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -93,11 +91,12 @@ body {
     }
 
     #divContact > img {
+        display: block;
         width: 50%;
     }
 
     #divContact:hover {
         transform: translate(10px, -10px);
-        transition: transform 0.3s;
+        transition: transform 0.3s ease-in-out 0.3ms;
     }
 }

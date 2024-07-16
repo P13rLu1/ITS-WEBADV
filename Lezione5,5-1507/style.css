@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#searchInput {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#searchButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #218838;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.game {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.game img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.game .info {
+    flex: 1;
+}
+
+.game .info h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.game .info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.game .info a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.game .info a:hover {
+    text-decoration: underline;
+}

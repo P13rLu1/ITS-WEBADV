@@ -1,0 +1,44 @@
+/* Stilizzazione di Base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F0F0;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Stilizzazione del Contenuto Principale */
+#divHTML {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Stilizzazione dei Titoli e dei Testi */
+h1 {
+    color: #007BFF;
+    text-align: center;
+}
+
+b {
+    color: #0056b3;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #divHTML {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+}
