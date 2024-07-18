@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #ddd;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+#gameDetails {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#gameInfo {
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#gameInfo h1 {
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+#gameInfo p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+#gameInfo img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#gameInfo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#screenshots img {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 16px !important;
+    padding: 8px;
+    transition: transform 0.3s ease;
+}
+
+#gameInfo a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#gameInfo a:hover {
+    background-color: #45a049;
+}
+
+#screenshots {
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#screenshots h2 {
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+#screenshots img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#gameInfo:hover,
+#screenshots:hover {
+    background-color: #3f3f3f;
+}
+
+#gameInfo img:hover,
+#screenshots img:hover {
+    transform: scale(1.05);
+}
