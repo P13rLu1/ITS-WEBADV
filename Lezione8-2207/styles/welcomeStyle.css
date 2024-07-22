@@ -1,0 +1,55 @@
+/* Stilizzazione di Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the welcome message vertically */
+    height: 100vh; /* Full height for vertical centering */
+}
+
+/* Stilizzazione del Messaggio di Benvenuto */
+#divWelcome {
+    font-size: 2em;
+    color: var(--primary-color);
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #divWelcome {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #divWelcome {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
+
+/* Colori e Tema */
+:root {
+    --primary-color: #bb86fc;
+    --save-color: #03dac6;
+    --info-color: #2196f3;
+    --delete-color: #cf6679;
+    --save-hover-color: #018786;
+    --info-hover-color: #1769aa;
+    --delete-hover-color: #b00020;
+}

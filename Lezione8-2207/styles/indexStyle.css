@@ -1,0 +1,126 @@
+/* Stilizzazione di Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stilizzazione del Form */
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+input[type="button"] {
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1em;
+}
+
+#btnSalva {
+    background-color: var(--save-color);
+}
+
+#btnInfo {
+    background-color: var(--info-color);
+}
+
+#btnCancella {
+    background-color: var(--delete-color);
+}
+
+#btnSalva:hover {
+    background-color: var(--save-hover-color);
+    transform: scale(1.05);
+}
+
+#btnInfo:hover {
+    background-color: var(--info-hover-color);
+    transform: scale(1.05);
+}
+
+#btnCancella:hover {
+    background-color: var(--delete-hover-color);
+    transform: scale(1.05);
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="button"] {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input[type="button"] {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Colori e Tema */
+:root {
+    --primary-color: #bb86fc;
+    --save-color: #03dac6;
+    --info-color: #2196f3;
+    --delete-color: #cf6679;
+    --save-hover-color: #018786;
+    --info-hover-color: #1769aa;
+    --delete-hover-color: #b00020;
+}
+
+/* Effetti Interattivi */
+a:hover, input[type="button"]:hover {
+    opacity: 0.9;
+}
+
+/* Aggiungi un po' di spaziatura tra gli elementi */
+form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
