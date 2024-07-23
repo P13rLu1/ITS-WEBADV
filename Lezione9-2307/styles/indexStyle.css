@@ -9,9 +9,35 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
-/* Contenitore dei Prodotti */
+/* Pulsante del Carrello */
+#carrelloBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrelloBtn:hover {
+    background-color: #795f16;
+    transform: scale(1.05);
+}
+
+#carrelloBtn span {
+    margin-left: 5px;
+}
+
 #productList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Massimo di 3 colonne */
@@ -20,7 +46,6 @@ body {
     max-width: 1200px;
 }
 
-/* Stilizzazione del Prodotto */
 .product-item {
     background-color: #1e1e1e;
     border: 1px solid #333;
@@ -51,20 +76,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Stilizzazione dei Collegamenti Ipertestuali */
-a {
-    color: #bb86fc;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-top: 20px;
-}
-
-a:hover {
-    color: #bb86fc;
-    opacity: 0.9;
-}
-
-/* Responsività */
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -87,10 +98,6 @@ a:hover {
     button {
         padding: 10px 15px;
         font-size: 0.9em;
-    }
-
-    a {
-        font-size: 1em;
     }
 
     #productList {
