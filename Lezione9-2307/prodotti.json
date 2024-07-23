@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "description": "Un laptop potente e leggero con 16GB di RAM e 512GB SSD.",
+      "price": 1200.99,
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g16-7630/pdp/laptop-g16-7630-intel-pdp-hero.psd?qlt=95&fit=constrain,1&hei=400&wid=570&fmt=png-alpha"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "description": "Un moderno smartphone con fotocamera da 48MP e schermo AMOLED.",
+      "price": 799.99,
+      "image": "https://m.media-amazon.com/images/I/61nzbNdA7hL.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Cuffie Wireless",
+      "description": "Cuffie wireless con cancellazione del rumore e 20 ore di autonomia.",
+      "price": 199.99,
+      "image": "https://m.media-amazon.com/images/I/71fBJd2SVtL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Smartwatch",
+      "description": "Smartwatch con monitoraggio del battito cardiaco e GPS integrato.",
+      "price": 249.99,
+      "image": "https://m.media-amazon.com/images/I/61ksrJ2LsgL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Tablet",
+      "description": "Tablet con schermo da 10 pollici e 64GB di memoria interna.",
+      "price": 329.99,
+      "image": "https://www.esdorado.com/3014-large_default/tablet-samsung-galaxy-tab-s6-lite-p610-104-wifi-64gb-blue.jpg"
+    }
+  ]
+}

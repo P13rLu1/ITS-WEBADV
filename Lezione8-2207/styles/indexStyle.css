@@ -74,6 +74,19 @@ input[type="button"] {
     transform: scale(1.05);
 }
 
+/* Stilizzazione dei Collegamenti Ipertestuali */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    opacity: 0.9;
+}
+
 /* Responsività */
 @media (max-width: 768px) {
     body {
@@ -98,17 +111,23 @@ input[type="button"] {
         padding: 10px 15px;
         font-size: 0.9em;
     }
+
+    a {
+        font-size: 1em;
+    }
 }
 
 /* Colori e Tema */
 :root {
-    --primary-color: #bb86fc;
+    --primary-color: lightblue;
     --save-color: #03dac6;
     --info-color: #2196f3;
     --delete-color: #cf6679;
     --save-hover-color: #018786;
     --info-hover-color: #1769aa;
     --delete-hover-color: #b00020;
+    --link-color: #bb86fc;
+    --link-hover-color: #bb86fc;
 }
 
 /* Effetti Interattivi */

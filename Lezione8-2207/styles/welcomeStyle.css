@@ -24,6 +24,19 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Stilizzazione dei Collegamenti Ipertestuali */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    opacity: 0.9;
+}
+
 /* Responsività */
 @media (max-width: 768px) {
     body {
@@ -34,6 +47,10 @@ body {
         font-size: 1.5em;
         padding: 15px;
     }
+
+    a {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -41,15 +58,21 @@ body {
         font-size: 1.2em;
         padding: 10px;
     }
+
+    a {
+        font-size: 0.9em;
+    }
 }
 
 /* Colori e Tema */
 :root {
-    --primary-color: #bb86fc;
+    --primary-color: lightblue;
     --save-color: #03dac6;
     --info-color: #2196f3;
     --delete-color: #cf6679;
     --save-hover-color: #018786;
     --info-hover-color: #1769aa;
     --delete-hover-color: #b00020;
+    --link-color: #bb86fc;
+    --link-hover-color: #bb86fc;
 }

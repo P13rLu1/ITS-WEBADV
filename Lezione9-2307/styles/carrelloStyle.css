@@ -1,0 +1,82 @@
+/* Stilizzazione di Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenitore del Carrello */
+#cartList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Stilizzazione dell'Articolo del Carrello */
+.cart-item {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.cart-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #cf6679;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #b00020;
+    transform: scale(1.05);
+}
+
+/* Stilizzazione dei Collegamenti Ipertestuali */
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #bb86fc;
+    opacity: 0.9;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #cartList {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    #cartList {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

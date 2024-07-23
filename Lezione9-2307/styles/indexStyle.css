@@ -1,0 +1,99 @@
+/* Stilizzazione di Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenitore dei Prodotti */
+#productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Massimo di 3 colonne */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Stilizzazione del Prodotto */
+.product-item {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1769aa;
+    transform: scale(1.05);
+}
+
+/* Stilizzazione dei Collegamenti Ipertestuali */
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #bb86fc;
+    opacity: 0.9;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #productList {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonne su schermi più piccoli */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .product-item h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    #productList {
+        grid-template-columns: 1fr; /* 1 colonna su schermi molto piccoli */
+    }
+}
