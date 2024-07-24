@@ -1,0 +1,84 @@
+/* Stilizzazione di Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Pulsante dei Piatti Salvati */
+#piattiSalvatiBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#piattiSalvatiBtn:hover {
+    background-color: #cc5137;
+    transform: scale(1.05);
+}
+
+#piattiSalvatiBtn span {
+    margin-left: 5px;
+}
+
+/* Ricerca */
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1769aa;
+    transform: scale(1.05);
+}
+
+#recipeList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.recipe-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}

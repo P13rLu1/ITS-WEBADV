@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricette</title>
+    <link rel="stylesheet" href="styles/indexStyle.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" type="image/x-icon">
+</head>
+<body>
+<button id="piattiSalvatiBtn" onclick="vaiAiPiattiSalvati()">Piatti Salvati (<span id="savedCount">0</span>)</button>
+<h1>Ricerca Ricette</h1>
+<input type="text" id="searchInput" placeholder="Cerca ricette...">
+<button onclick="cercaRicette()">Cerca</button>
+<div id="recipeList"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="scripts/indexScript.js"></script>
+</body>
+</html>
