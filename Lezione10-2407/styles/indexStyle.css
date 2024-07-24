@@ -90,3 +90,13 @@ button:hover {
     max-width: 100%;
     border-radius: 22px;
 }
+
+/* Stile per il Label Personalizzato */
+.custom-label {
+    font-size: 18px;
+    color: #ff6347;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+}
