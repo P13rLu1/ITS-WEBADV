@@ -10,8 +10,10 @@
 <body>
 <button id="piattiSalvatiBtn" onclick="vaiAiPiattiSalvati()">Piatti Salvati (<span id="savedCount">0</span>)</button>
 <h1>Ricerca Ricette</h1>
-<input type="text" id="searchInput" placeholder="Cerca ricette per iniziale...">
-<button onclick="cercaRicette()">Cerca</button>
+<div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Cerca ricette per iniziale...">
+    <button onclick="cercaRicette()">Cerca</button>
+</div>
 <div id="recipeList"></div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="scripts/indexScript.js"></script>

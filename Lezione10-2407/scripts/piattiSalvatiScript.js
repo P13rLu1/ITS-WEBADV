@@ -27,6 +27,7 @@ function visualizzaPiattiSalvati() {
                             <h2>${piatto.strMeal}</h2>
                             <p>${piatto.strInstructions}</p>
                             <button onclick="rimuoviPiattoSalvato(${piattoId})">Rimuovi</button>
+                            <button class="youtube-button" onclick="vaiAlVideo('${piatto.strYoutube}')">Guarda Video</button>
                         </div>
                     `;
                     listaSalvati.append(elementoPiatto);
@@ -36,6 +37,10 @@ function visualizzaPiattiSalvati() {
                 console.error('Caricamento dei piatti salvati fallito:', error);
             });
     }
+}
+
+function vaiAlVideo(url) {
+    window.open(url, '_blank');
 }
 
 function getPiattiSalvati() {
