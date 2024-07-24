@@ -1,8 +1,8 @@
 /* Stilizzazione di Base */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #121212;
+    color: #ffffff;
     margin: 0;
     padding: 20px;
     line-height: 1.6;
@@ -44,6 +44,7 @@ input[type="text"] {
     border: 1px solid #ccc;
     margin-bottom: 20px;
     width: 300px;
+    color: #121212;
 }
 
 button {
@@ -54,6 +55,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s;
+    margin-bottom: 20px; /* Space between button and results */
 }
 
 button:hover {
@@ -70,8 +72,8 @@ button:hover {
 }
 
 .recipe-item {
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
     border-radius: 5px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
