@@ -45,6 +45,14 @@ body {
     margin-bottom: 20px;
 }
 
+#searchButton {
+    background-color: #44e120;
+}
+
+#searchButton:hover {
+    background-color: #3dbb1a;
+}
+
 /* Ricerca */
 input[type="text"] {
     padding: 10px;
@@ -69,6 +77,16 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Pulsante Random */
+#randomBtn {
+    background-color: #ff9800;
+}
+
+#randomBtn:hover {
+    background-color: #e68900;
+}
+
+/* Lista delle Ricette */
 #recipeList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

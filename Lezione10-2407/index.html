@@ -11,9 +11,10 @@
 <button id="piattiSalvatiBtn" onclick="vaiAiPiattiSalvati()">Piatti Salvati (<span id="savedCount">0</span>)</button>
 <h1>Ricerca Ricette</h1>
 <div id="searchContainer">
-    <label for="searchInput" class="custom-label">Cerca:</label><input type="text" id="searchInput"
-                                                                       placeholder="Cerca ricette per iniziale...">
-    <button onclick="cercaRicette()">Cerca</button>
+    <label for="searchInput" class="custom-label">Cerca:</label>
+    <input type="text" id="searchInput" placeholder="Cerca ricette...">
+    <button id="searchButton" onclick="cercaRicette()">Cerca</button>
+    <button id="randomBtn" onclick="vaiAPiattoRandom()">Random</button>
 </div>
 <div id="recipeList"></div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

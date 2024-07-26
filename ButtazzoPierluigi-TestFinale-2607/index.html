@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World is a Wonderful Place</title>
+    <link rel="stylesheet" href="styles/indexStyle.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2240/2240692.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+<header>
+    <h1>The World is a Wonderful Place</h1>
+</header>
+<div class="container">
+    <aside>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Cerca nazione...">
+            <button id="searchButton" onclick="searchCountry()">Cerca</button>
+        </div>
+        <a href="favourites.html" id="Favourites">Favourites</a>
+        <nav>
+            <ul id="regionMenu">
+                <li>
+                    <a href="#" onclick="toggleSubregions('europe')">Europe</a>
+                    <ul id="europeSubregions" class="subregion-list"></ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubregions('africa')">Africa</a>
+                    <ul id="africaSubregions" class="subregion-list"></ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubregions('asia')">Asia</a>
+                    <ul id="asiaSubregions" class="subregion-list"></ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubregions('americas')">Americas</a>
+                    <ul id="americasSubregions" class="subregion-list"></ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubregions('oceania')">Oceania</a>
+                    <ul id="oceaniaSubregions" class="subregion-list"></ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="mainContent"></main>
+</div>
+<footer>
+    <p>&copy; 2024 The World is a Wonderful Place. Developed By Pierluigi Buttazzo™.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="scripts/indexScript.js"></script>
+</body>
+</html>

@@ -91,3 +91,7 @@ function setCookie(nome, valore, giorni) {
 function vaiAiPiattiSalvati() {
     window.location.href = "piattiSalvati.html";
 }
+
+function vaiAPiattoRandom() {
+    window.location.href = "piattoRandom.html";
+}
